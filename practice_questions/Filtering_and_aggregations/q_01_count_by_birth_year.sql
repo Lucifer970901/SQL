@@ -1,0 +1,11 @@
+-- == PROBLEM METADATA ==
+-- Source: sqlpractice.com (Easy Category)
+-- Topic: Filtering and Aggregation
+-- Secondary Concepts: WHERE Clause, COUNT() function, Date Functions (YEAR() or STRFTIME())
+-- Difficulty: Easy
+--
+-- DESCRIPTION:
+-- Write a query to count the total number of patient records whose birth 
+-- year is exactly 2010, requiring the use of a date extraction function.
+-- ======================
+select count(*) as patients_born_in_2010 from patients where year(birth_date) = 2010; 
